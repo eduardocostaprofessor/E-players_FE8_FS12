@@ -42,6 +42,22 @@ body {
     /* border: 1px solid salmon; */
 }
 
+
+/* CUSTOMIZAÇÃO DO BOOTSTRAP */
+.container, .container-fluid, .container-gid {
+    border: 1px solid red;
+}
+.mostra-coluna {
+    border: 2px solid green;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+
+
 /* ***************** PRODUTOS ***************** */
 header {
     height: 80px;
