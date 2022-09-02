@@ -44,12 +44,12 @@ body {
 
 
 /* CUSTOMIZAÇÃO DO BOOTSTRAP */
-.container, .container-fluid, .container-gid {
+/* .container, .container-fluid, .container-gid {
     border: 1px solid red;
 }
 .mostra-coluna {
     border: 2px solid green;
-}
+} */
 
 .container {
     max-width: 1200px;
@@ -99,7 +99,7 @@ header .menu-bar {
 }
 
 
-/* ***************** PRODUTOS ***************** */
+/* ***************** PRODUTOS/JOGOS ***************** */
 /* section produtos */
 .produtos {
     width: 100%;
@@ -168,6 +168,40 @@ header .menu-bar {
     opacity: 0.98 !important;
 }
 
+
+
+
+/* ***************JOGOS**************** */
+/* section jogos (produtos) */
+.jogos {
+    background-color: #1E1C21;
+}
+.jogos .ofertas {
+    font-family: "TitilliumWeb-Regular";
+    color: white;
+    padding: 20px 0;
+}
+.jogos .card {
+    max-width: 250px;
+    margin-bottom: 20px;
+    font-family: "Roboto-Thin";
+    color: white;
+    background-image: linear-gradient(to bottom, #1E1C21, #2a2a2c);
+}
+
+.jogos .card .card-title {
+    font-size: 1.5rem;
+    font-family: "Roboto-Light";
+    text-transform: uppercase;
+}
+.jogos .card .btn-buy {
+    width: 100%;
+    font-family: "Roboto-Light";
+    background-color: #C31616;
+    text-transform: uppercase;
+}
+
+
 /* TABLETS < 992px (768px  até 991px)  */
 @media screen and (max-width: 991px) {
     header {
@@ -179,6 +213,8 @@ header .menu-bar {
         position: fixed;/* fixa o elemento baseado na viewoport */
         top: 0;
         left: -80%;/* inicialmente escondido */
+        z-index: 100; /* controla a camada do elemento com position */
+
 
         opacity: 0;/*inicialmente invisível*/
         width: 80%;
