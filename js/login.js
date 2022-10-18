@@ -15,7 +15,7 @@ $(document).ready(function(){
 
         console.log( podeCadastrar(email, senha) );
 
-        if( validarLogin(email, senha) ) {
+        if( podeCadastrar(email, senha) ) {
             alert("Preenchido corretamente")
         } else {
             alert("Preencher todos os campos")
